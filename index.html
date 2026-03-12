@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-adsense-account" content="ca-pub-6882558578775746">
-    <title>My Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="google-adsense-account" content="ca-pub-6466986689658248">
+    
+    <title>工作坊入口｜長照與社工專業數位工具</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            background-color: #f0f2f5;
+            color: #334155;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #1e293b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { color: #94a3b8; font-size: 16px; margin-top: 10px; }
+        
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        /* 專案卡片設計 */
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 5px solid #3b82f6;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .project-card h2 { margin: 0 0 10px 0; color: #0f172a; font-size: 22px; }
+        .project-card p { line-height: 1.6; color: #64748b; margin-bottom: 20px; }
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn:hover { background-color: #2563eb; }
+
+        /* 文章與關於區塊 (給機器人看的養分) */
+        .content-section {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            line-height: 1.8;
+            color: #475569;
+        }
+        .content-section h3 { color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+
+        /* 頁尾與政策連結 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #94a3b8;
+            background: #e2e8f0;
+        }
+        .footer a {
+            color: #64748b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover { color: #3b82f6; text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <h1>歡迎來到我的專案主頁</h1>
-    <p>目前正在驗證 AdSense 中...</p>
+
+    <div class="header">
+        <h1>長照與社工專業數位工作坊</h1>
+        <p>致力於開發提升第一線工作者行政效率的開源工具</p>
+    </div>
+
+    <div class="container">
+        <div class="project-card">
+            <h2>📊 互動式電子家系圖與紀錄產生器</h2>
+            <p>這是一套專為社工、居服員與長照機構人員打造的現代化生產力工具。完美解決實務上繪製複雜「重組家庭」、「多段婚姻」的痛點。<br><br>
+            特色功能包含：拖曳連線自動磁吸排版、多胞胎與生態圖繪製、以及最受歡迎的「一鍵生成專業個案文字紀錄」功能，幫您省下大把的文書作業時間。</p>
+            <a href="https://cnm27880-ops.github.io/Social-Worker/" class="btn">🚀 立即開啟工具</a>
+        </div>
+
+        <div class="content-section">
+            <h3>關於本站與開發初衷</h3>
+            <p>在長照機構的日常工作中，我們發現社工夥伴經常需要耗費大量時間使用 Word 或小畫家來繪製家系圖，尤其遇到複雜的家庭結構時，往往排版大亂、難以對齊。此外，看著圖表手打個案紀錄也是一件繁瑣的工作。</p>
+            <p>因此，我們開發了這系列純前端運作的輔助工具。所有的繪圖資料與紀錄文字，都只會在使用者的瀏覽器本地端進行運算，絕對不會上傳至任何伺服器，以最高標準保障個案的隱私安全。希望這些小工具能成為您辦公桌上的得力助手！</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 長照與社工數位工作坊. All rights reserved.</p>
+        <div>
+            <a href="#">關於我們</a> | 
+            <a href="#">隱私權政策 (Privacy Policy)</a> | 
+            <a href="#">聯絡開發者</a>
+        </div>
+    </div>
+
 </body>
 </html>
